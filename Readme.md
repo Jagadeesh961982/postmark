@@ -20,7 +20,8 @@ Without a powerful LLM like Gemini, building a system that can understand contex
 
 ## How It Works: A Look Under the Hood
 
-![A simple flowchart illustrating the data flow from incoming email to outgoing reply.](https://i.imgur.com/example-flowchart.png "Application Flow")
+![image](https://github.com/user-attachments/assets/9992b39a-de12-42d9-a889-3abb6cb6b157)
+
 
 *A simple flowchart illustrating the data flow from incoming email to outgoing reply.*
 
