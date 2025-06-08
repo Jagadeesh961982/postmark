@@ -8,10 +8,10 @@ const router = express.Router();
 router.post('/', async (req, res) => {
     try {
         const { From, Subject, TextBody } = req.body;
-        console.log('Received webhook:', { From, Subject, TextBody });
+        // console.log('Received webhook:', { From, Subject, TextBody });
 
         const aiResponse = await classifyEmailAndRespond(TextBody,From);
-        console.log('Classification result:', aiResponse);
+        // console.log('Classification result:', aiResponse);
         const feedback = await Feedback.create({
             from: From,
             subject: Subject,

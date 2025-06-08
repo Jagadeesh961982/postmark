@@ -10,10 +10,10 @@ const transporter = nodemailer.createTransport({
   }
 });
 
-console.log("✅ Nodemailer transporter initialized");
+// console.log("✅ Nodemailer transporter initialized");
 
 export async function sendReply(subject, userEmail, replyText) {
-  console.log("📧 Sending reply with nodemailer...", { subject, userEmail });
+  // console.log("📧 Sending reply with nodemailer...", { subject, userEmail });
 
   try {
     const info = await transporter.sendMail({
