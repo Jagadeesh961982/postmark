@@ -108,6 +108,3 @@ Follow these steps to set up and run the project locally.
     npm start
     ```
     The server will start on `http://localhost:3000`. You should see "Server running on port 3000" and "MongoDB connected" in your console.
-
-5.  **Configure Your Webhook:**
-    Use a service like [ngrok](https://ngrok.com/) to expose your local server to the internet. Then, configure your email provider (e.g., Postmark) to send inbound email webhooks to your ngrok URL (e.g., `https://your-ngrok-id.ngrok.io/webhook`).
