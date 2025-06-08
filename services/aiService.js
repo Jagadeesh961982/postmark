@@ -6,7 +6,7 @@ import { isRelatedToPrevious } from './isContextRelated.js';
 dotenv.config();
 
 const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY);
-const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
 // console.log("✅ Gemini model initialized");
 export async function classifyEmailAndRespond(emailText,userEmail) {
 
