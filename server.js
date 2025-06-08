@@ -7,6 +7,9 @@ dotenv.config();
 
 const app = express();
 app.use(express.json());
+app.get('/', (req, res) => {
+    res.send('Postmark Webhook Server is running');
+});
 app.use('/webhook', webhookRoutes);
 
 mongoose.connect(process.env.MONGO_URI)
